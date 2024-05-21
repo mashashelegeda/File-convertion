@@ -1,4 +1,3 @@
-
 import argparse
 
 def parse_arguments():
@@ -13,5 +12,22 @@ def main():
     result = ""
     files_format = args.input_file.split('.')[-1].lower()
 
+
+def json_load(file_path):
+    with open(file_path, 'r') as file:
+        return json.load(file)
+
+def json_save(result, file_path):
+    with open(file_path, 'w')as file:
+        return json.dump(result, file)
+        
+def yaml_load(file_path):
+    with open(file_path, 'r') as file:
+        return yaml.safe_load(file)
+        
+def yaml_save(result, file_path):
+    with open(file_path, 'w') as file:
+        yaml.dump(result, file)
+      
 if __name__ == "__main__":
     main()
