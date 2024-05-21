@@ -28,6 +28,7 @@ def yaml_load(file_path):
 def yaml_save(result, file_path):
     with open(file_path, 'w') as file:
         yaml.dump(result, file)
+
       
 if __name__ == "__main__":
     main()
