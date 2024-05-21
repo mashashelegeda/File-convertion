@@ -17,6 +17,10 @@ def json_load(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
 
+def json_save(result, file_path):
+    with open(file_path, 'w')as file:
+        return json.dump(result, file)
+
       
 if __name__ == "__main__":
     main()
