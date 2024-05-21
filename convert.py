@@ -28,6 +28,10 @@ def yaml_load(file_path):
 def yaml_save(result, file_path):
     with open(file_path, 'w') as file:
         yaml.dump(result, file)
+        
+def xml_load(file_path):
+    with open(file_path, 'r') as file:
+        return xmltodict.parse(file.read())
 
       
 if __name__ == "__main__":
