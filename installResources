@@ -1,0 +1,9 @@
+#!/bin/bash
+pip install argparse
+pip install pyinstaller
+pip install pyyaml
+pip install xmltodict
+
+
+
+
